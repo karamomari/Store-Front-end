@@ -1,0 +1,597 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.headerformedia{
+    display: none !important;
+}
+.page{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:repeat(10,1fr);
+    grid-template-rows: 70px 1fr 200px;
+    grid-template-areas: "logo logo nav nav nav nav nav nav nav nav "
+                         "main main main main main main main main main said" 
+                         "foot foot foot foot foot foot foot foot foot foot";
+             
+}
+header{
+    grid-area:nav;
+   position: sticky;
+   top: 0px;
+   z-index: 1;
+}
+ .logo{
+    grid-area:logo;
+ border-radius:2px ;
+ position: sticky;
+ top: 0px;
+ z-index: 1;
+
+}
+header ul{
+    list-style: none;
+    position: absolute;
+    top: 14px;
+    right:57px;
+
+    
+}
+header ul li{
+    display: inline;
+  margin-left: 20px;
+ 
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+main {
+    grid-area:main;
+}
+aside{ 
+    grid-area: said;
+
+}
+
+
+main .mainsection{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "card  card card2 card2 card5 card6 card7 card8"
+                          "card3 card3 card4 card4 card9 card10 card11 card12";
+}
+
+
+/* card one */
+.mainsection .card1{  
+    grid-area: card;
+   
+  
+}
+
+.mainsection .card1:hover {
+opacity: 1;
+filter: blur(0px); 
+transition: 2s;
+transform: scale(1.05);
+}
+
+
+.mainsection .card1 a{
+    position:absolute;
+   
+}
+.mainsection .card1 p{
+    color: rgb(30, 14, 170);
+    left: 87px;
+    bottom:115px;
+
+}
+
+
+
+
+
+/* card tow */
+
+.mainsection .card2{
+    grid-area: card2;
+   
+}
+
+.mainsection .card2:hover {
+    opacity: 1;
+    filter: blur(0px); 
+    transition: 2s;
+transform: scale(1.05);
+}
+
+
+
+.mainsection .card2 p{
+    background-color:white;
+    color:rgb(10, 236, 10);
+    left: 90px;
+    bottom:109px;
+  
+
+}
+
+
+
+
+/* card three */
+.mainsection .card3{
+    grid-area: card3;
+  
+}
+
+.mainsection .card3:hover{
+    opacity: 1; 
+     filter: blur(0px); 
+     transition: 2s;
+     transform: scale(1.05);
+   
+}
+
+.mainsection .card3 img:hover button{
+
+}
+.mainsection .card3 a{
+  
+   color: black;
+
+}
+
+.mainsection .card3 p{
+    color:black;
+   
+    left: 92px;
+    bottom:109px;
+
+
+}
+
+
+
+
+
+
+/* card four */
+
+.mainsection .card4{
+    grid-area: card4;
+    opacity: 1 !important;
+}
+
+.mainsection .card4:hover{
+    opacity: 1;
+    transition: 2s;
+    transform: scale(1.05);
+
+}
+
+.mainsection .card4 img:hover button{
+
+}
+
+
+ 
+/* card five */
+
+.mainsection .card5{
+    grid-area: card5;
+    top: 5px !important;
+  
+}
+.mainsection .card5:hover{
+    opacity: 1;
+    transition: 2s;
+    transform: scale(1.1);
+}
+
+
+
+.mainsection .card5 p{
+    color:red;   
+  
+}
+
+.mainsection .card5 button{
+    /* position:absolute;
+    text-decoration: none;
+    font-size: 20px;
+   opacity: 0.9;
+   filter: blur(0.2px);
+   left: 49px;
+   bottom: 61px;
+     */
+     
+}
+
+
+
+/* card sex */
+
+.mainsection .card6{
+    grid-area: card6;
+    top: 5px !important;
+    
+}
+.mainsection .card6:hover{
+    opacity: 1;
+    transition: 2s;
+    transform: scale(1.1);
+}
+
+.mainsection .card6 p{  
+    color: rgb(16, 11, 80);     
+font-size: 14px !important;
+}
+
+
+/* card saven */
+
+.mainsection .card7{
+    grid-area: card7;
+    top: 5px !important;
+ 
+}
+.mainsection .card7:hover{
+    opacity: 1;
+    transition: 2s;
+    transform: scale(1.1);
+}
+
+.mainsection .card7 a{
+    background-color: antiquewhite;
+    position:absolute;
+    left: 58px;
+    bottom:133px;
+    text-decoration: none;
+    color: rgb(16, 11, 80);
+    font-size: 20px;
+   font-weight: bold;
+
+}
+.mainsection .card7 p{
+    color: rgb(16, 11, 80);
+
+}
+
+
+
+
+
+/* card 8 */
+.mainsection .card8{
+    grid-area: card8;
+    top: 5px !important;
+ 
+}
+.mainsection .card8:hover{
+    opacity: 1;
+    transition: 2s;
+    transform: scale(1.1);
+}
+
+
+.mainsection .card8 a{
+background-color: white;
+    position:absolute;
+    left: 58px;
+    bottom:133px;
+    text-decoration: none;
+    color: rgb(177, 104, 8);
+    font-size: 25px;
+   font-weight: bold;
+
+}
+.mainsection .card8 p{
+    color: rgb(177, 104, 8);
+   left: 32px !important;
+   bottom: 45px !important;
+}
+
+
+
+
+/* crad 9 */
+.mainsection .card9{
+    grid-area: card9;
+  
+  
+}
+.mainsection .card9:hover{
+    opacity: 1;
+    transition: 2s;
+    transform: scale(1.1);
+}
+
+
+/* card10 */
+.mainsection .card10{
+    grid-area: card10;
+  
+  
+}
+.mainsection .card10:hover{
+    opacity: 1;
+    transition: 2s;
+    transform: scale(1.1);
+}
+
+
+
+/* card11 */
+.mainsection .card11{
+    grid-area: card11;
+   
+  
+}
+.mainsection .card11:hover{
+    opacity: 1;
+    transition: 2s;
+    transform: scale(1.1);
+}
+
+/* card 12 */
+.mainsection .card12{
+    grid-area: card12;
+  
+  
+}
+.mainsection .card12:hover{
+    opacity: 1;
+    transition: 2s;
+    transform: scale(1.1);
+}
+
+
+
+
+/* att shared of image from 1 to 9*/
+.mainsection .img_1-9{
+    border-radius: 23px;
+
+}
+
+
+/* att  shared of card from 1 to 4*/
+.mainsection .card1,.card2,.card3,.card4{
+    padding-top: 2px;
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-left: 2px;
+    opacity: 0.6; 
+    filter:blur(0.4px); 
+    margin: 4px 14px;
+}
+
+/* button of card from 1 to 4*/
+.mainsection .but_1-4{
+   width: 120px;
+   height: 25px;
+   position: relative;
+   bottom: 57px;
+   left: 85px;
+
+}
+
+/* button (link)of card from 1 to 6  and 9 to 12*/
+.mainsection .a-button{
+    position: relative !important;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+
+ /* button of card 7 and 8 */
+.mainsection .a7-8-button{
+    position: relative !important ;
+    left: 2px !important;
+    bottom: 0 !important;
+    font-size: 13px !important;
+}
+
+
+/* hover button from 1to 4*/
+.mainsection .but_1-4:hover{
+    background-color: darkgrey;
+    opacity: 0.8;
+   filter: blur(0px);
+
+}
+
+/*att shared of link from 1 to 4*/
+.mainsection .a_1-4{
+    position:absolute;
+    left: 90px;
+    bottom:133px;
+    text-decoration: none;
+   
+    font-size: 20px;
+   font-weight: bold;
+}
+
+/*att shared of paregraf from 1 to 4*/
+.mainsection .p_1-4{
+    position:absolute;
+    left: 92px;
+    bottom:109px;
+    text-decoration: none;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+/* att  shared of card from 5 to 9*/
+.mainsection .card5,.card6,.card7,.card8,.card9,.card10,.card11,.card12{
+    padding-top: 2px;
+    border-radius: 7px;
+    width: 80%;
+    height: 60%;
+    position: relative;
+    margin-left: 2px;
+    opacity: 0.8;
+    margin: 4px 14px;
+    top: 130px;
+    left: 23px;
+}
+
+/* button of card from 5 to 9*/
+.mainsection .but_5-9{ 
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.9;
+    filter: blur(0.2px);
+    left: 17px;
+    bottom: 30px;
+    width: 69%;
+    height: 22px;
+}
+
+/* att sheard of pregarf from 5 to 8*/
+.mainsection .p_5-8{
+    font-size: 16PX;
+    position:absolute;
+    left: 22px;
+    bottom:50px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: antiquewhite;
+    
+    
+}
+
+/*att of span to 7 and 8*/
+.span7-8{
+position:absolute;
+top: 9px;
+right: 39px;
+}
+
+
+/* div welcome */
+.welcome{
+    grid-row: 2;
+    grid-column: 5 / 11;
+    width: 95%;
+    height: 250px;
+    position: relative;
+    top: -128px;
+    padding: 14px;
+    margin-left: 15px;
+  
+}
+.welcome img{
+    opacity: 0.8;
+    display: inline;
+}
+.welcome span{
+    position: absolute;
+    color: white;
+    top: 50px;
+    right: 90px;
+}
+.welcome span a{
+    color: red;
+   text-decoration: none;
+}
+
+aside{
+    background-color: black;
+}
+
+footer{
+grid-area: foot;
+background-color:black;
+display: grid;
+grid-template-columns: repeat(5,1fr);
+}
+footer .locatin{
+    grid-column: 1;
+}
+footer .span1{
+    grid-column: 2;
+    color: white;
+    margin-left: 18px;
+    margin-top: 15px;
+}
+
+
+
+footer .span2{
+grid-column: 3;
+color: white;
+margin-left: 18px;
+margin-top: 15px;
+}
+
+footer .span2 input{
+    border-radius: 20px;
+}
+footer .span2 button{
+
+    border-radius: 20px;
+   width: 30%;
+position: relative;
+left: 20px;
+}
+
+footer .span3{
+    grid-column:4;
+    color: white;
+    margin-left: 18px;
+    margin-top: 15px;
+}
+
+
+footer .span3 .a1{
+    position: relative;
+    top: 9px;
+    color: white;
+}
+
+footer .span3 .a2{
+    position: relative;
+    top: 18px;
+    color: white;
+}
+footer .span3 .a1:hover{
+    color: red;
+}
+footer .span3 .a2:hover{
+    color: red;
+}
+
+
+footer .span4{
+    background-color:black;
+   font-size: 40px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+footer .span4 .k{
+    color: red;
+}
+
+
+

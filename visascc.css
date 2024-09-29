@@ -1,0 +1,142 @@
+
+
+
+/* header*/
+ .page{
+  width: 100%;
+  display: grid;
+  grid-template-columns:repeat(10,1fr);
+  grid-template-areas: "logo logo nav nav nav nav nav nav nav nav ";
+  position: sticky;
+  top: 5px;
+  z-index: 1
+
+ }
+ .header{
+  grid-area:nav;
+
+}
+.logo{
+
+  grid-area:logo;
+border-radius:2px ;
+
+
+}
+ .header ul{
+  list-style: none;
+  position: absolute;
+  top: 14px;
+  right:57px;
+
+  
+}
+ .header ul li{
+  display: inline;
+margin-left: 20px;
+
+}
+.header ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+
+
+
+.pagecart{
+  height: 100vh;
+  width: 100%;
+display: grid;
+grid-template-columns: 250px 1fr 250px;
+grid-template-rows: 315px 50px 600px;
+}
+
+.pagecart .visa{
+
+  grid-row: 1;
+  grid-column: 2;
+  border:1px solid black;
+  width: 580px;
+  margin-top: 10px;
+  
+  
+}
+.pagecart .visa .owner{
+  width: 400px;
+  margin-left: 15px;
+}
+.pagecart .visa .cvv{
+  width: 95px;
+  margin-left: 20px;
+}
+.pagecart .visa .labelnumber{margin-left: 15px;}
+.pagecart .visa .labeloner{margin-left: 15px;}
+.pagecart .visa .labeldate{margin-left: 15px;}
+.pagecart .visa .date{margin-left: 15px;}
+.pagecart .visa .pass{ margin-left: 60px;}
+.pagecart .visa .labelpass{margin-left: 70px;}
+.pagecart .visa .number{width: 519px; margin-left: 15px; }
+.pagecart .visa .labelcvv{position: relative; left: 360px;}  
+.pagecart .visa i{font-size: 30px; margin-top: 6px; margin-left: 6px; }
+.pagecart .visa .oo{display: inline; font-size: 25px; margin-left: 60px;}
+.pagecart .visa .line{border-top: solid 1px black;} 
+.pagecart .visa button{
+  background-color:blueviolet;
+  margin-left: 15px;
+  color: white;
+  width: 519px;
+  height: 26px;
+  font-size: 20px;
+}
+.pagecart .buttonb{grid-row:2; grid-column: 2;  margin-top: 15px; width: 54%; }
+.pagecart .buttonb a{text-decoration: none;}
+
+
+
+
+
+.animation{
+
+  grid-row: 3;
+  grid-column: 2;
+  
+}
+
+
+.load{
+  background-color: white;
+  background-color: white;
+  border-radius: 50%;
+  border: 13px solid red;
+  width: 100px;
+  height: 100px;
+  margin-left: 252%;
+  margin-top: 150%;
+  animation-name: ff;
+  animation-duration: 7s;
+  z-index: 1;
+  border-top-color: transparent;
+  border-left-color: green;
+  border-right-color: blue;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes ff{
+  0%{transform: rotate(0turn); }
+  100%{ transform: rotate(1turn);  border: 5px solid transparent;  }  
+}
+
+@keyframes loaded{
+0%{opacity: 0;}
+100%{opacity: 1;}
+}
+
+.pageload{
+animation-name: loaded;
+animation-duration: 6s;
+animation-delay: 0.1s;
+}

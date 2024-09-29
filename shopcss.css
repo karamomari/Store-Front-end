@@ -1,0 +1,349 @@
+.to{
+    position: absolute;
+    bottom: -6743px;
+    width: 100%;
+    height: 61px;
+    background: whitesmoke;
+    left: 0px;
+    z-index: -1;
+
+}
+.shopflex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:whitesmoke;
+}
+.shopflex img{
+    background-color: gray !important;
+    margin-top: 17px;
+}
+/* header*/
+.page{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(10,1fr);
+    grid-template-areas: "logo logo nav nav nav nav nav nav nav nav ";
+    position: sticky;
+    top: 5px;
+    z-index: 1
+   }
+.header{
+    grid-area:nav;
+  
+}
+ .logo{
+  
+    grid-area:logo;
+ border-radius:2px ;
+ 
+
+}
+.header ul{
+    list-style: none;
+    position: absolute;
+    top: 14px;
+    right:57px;
+
+    
+}
+.header ul li{
+    display: inline;
+  margin-left: 20px;
+ 
+}
+.header ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+/**shared all*/
+button{border-radius: 12px; width: 110px;}
+ a{text-decoration: none;}
+ button:hover{transform: scale(1.2);}
+/*shop*/
+.shop{
+    display: grid;
+    grid-template-rows: repeat(14, 420px) 20px;
+    grid-gap: 50px;
+    width: 1015px;
+                       
+}
+/*shard shop*/
+
+
+
+.shop span{
+    position: relative;
+    left: 11px;
+    bottom: -21px;
+    display: grid;
+    align-items: initial;
+    justify-content: center;
+    align-self: self-end;
+}
+
+
+
+
+
+/* shop calbren*/
+.dis {
+  
+    display: grid;
+    grid-template-columns: repeat(5, 205px);
+    grid-template-areas: "one tow three four five";
+    grid-gap: 10px;            
+
+}
+
+
+ .img1, .dis .disimg1{grid-area: one;}
+ .img2,.dis .disimg2 {grid-area: tow;}
+ .img3, .disimg3{grid-area: three;}
+ .img4, .disimg4{ grid-area: four;}
+ .img5, .disimg5{grid-area: five;}
+
+ /* shop drag*/
+.dis2{
+    grid-row: 2;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 205px);
+    grid-template-areas: "one tow three four five";
+    grid-gap: 10px;  
+}
+
+ .img6,.dis2 .disimg6{grid-area: one;}
+ .img7,.dis2 .disimg7{grid-area: tow;}
+ .img8,.dis2 .disimg8{grid-area: three;}
+ .img9,.dis2 .disimg9{ grid-area: four;}
+ .img10,.dis2 .disimg10{grid-area: five;}
+
+
+/*shop 1k puff*/
+
+.dis3{
+    grid-row:3;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 205px);
+    grid-template-areas: "one tow three four five";
+    grid-gap: 10px;  
+}
+ 
+ .dis3 .disimg11,.img11{grid-area: one;}
+ .img12,.dis3 .disimg12{grid-area: tow;}
+ .img13,.dis3 .disimg13{grid-area: three;}
+ .img14,.dis3 .disimg14{ grid-area: four;}
+ .img15,.dis3 .disimg15{grid-area: five;}
+
+
+
+
+
+
+  /*shop 2k-4k puff*/
+ .dis4{
+    grid-row:4/6;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 205px);
+    grid-template-areas: "one tow three four five"
+                          "sex saven aet nine ten";
+    grid-gap: 10px;  
+ } 
+
+
+ .dis4 .img6,.dis4 .disimg6{grid-area: sex;}
+ .dis4 .img7,.dis4 .disimg7{grid-area: saven;}
+ .dis4 .img8,.dis4 .disimg8{grid-area: aet;}
+ .dis4 .img9,.dis4 .disimg9{ grid-area: nine;}
+ .dis4 .img10,.dis4 .disimg10{grid-area: ten;} 
+
+
+
+ .dis4 .img1,.dis4 .disimg1 { grid-area: one; }
+ .dis4 .disimg2,.dis4 .img2{  grid-area: tow;}
+ .dis4.disimg3,.dis4 .img3{   grid-area: three;}
+ .dis4 .disimg4,.dis4 .img4{  grid-area: four;}
+ .dis4 .disimg5 ,.dis4 .img5{ grid-area: five;}
+
+
+ /* coil*/
+ .dis5{
+    grid-row: 6/9;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 205px);
+    grid-template-areas: "one tow three four five"
+                          "sex saven aet nine ten"
+                           "elevn twelen therten fourten fiveten";
+    grid-gap: 10px;  
+  
+ }
+
+
+ .dis5 .img6,.dis5 .disimg6{grid-area: sex;}
+ .dis5 .img7,.dis5 .disimg7{grid-area: saven;}
+ .dis5 .img8,.dis5 .disimg8{grid-area: aet;}
+ .dis5 .img9,.dis5 .disimg9{ grid-area: nine;}
+ .dis5 .img10,.dis5 .disimg10{grid-area: ten;} 
+
+ .dis5 .img11,.dis5 .disimg11{grid-area: elevn;} 
+ .dis5 .img12,.dis5 .disimg12{grid-area: twelen;} 
+ .dis5 .img13,.dis5 .disimg13{grid-area: therten;} 
+ .dis5 .img14,.dis5 .disimg14{grid-area: fourten;} 
+ .dis5 .img15,.dis5 .disimg15{grid-area: fiveten;} 
+
+ .dis5 .disimg1{ grid-area: one;}
+ .dis5 .disimg2{   grid-area: tow;}
+ .dis5 .disimg3{   grid-area: three;}
+ .dis5 .disimg4{  grid-area: four;}
+ .dis5 .disimg5{ grid-area: five;}
+
+
+ /* juice puff*/
+
+ .dis6{
+    grid-row: 9/11;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 205px);
+    grid-template-areas: "one tow three four five"
+                          "sex saven aet nine ten";
+                          
+    grid-gap: 10px;  
+  
+ }
+
+
+ .dis6 .img6,.dis6 .disimg6{grid-area: sex;}
+ .dis6 .img7,.dis6 .disimg7{grid-area: saven;}
+ .dis6 .img8,.dis6 .disimg8{grid-area: aet;}
+ .dis6 .img9,.dis6 .disimg9{ grid-area: nine;}
+ .dis6 .img10,.dis6 .disimg10{grid-area: ten;} 
+
+
+
+ .dis6 .img1,.dis6 .disimg1{ grid-area: one;}
+ .dis6 .img2,.dis6 .disimg2{  grid-area: tow;}
+ .dis6 .img3,.dis6 .disimg3{ grid-area: three;}
+ .dis6 .img4,.dis6 .disimg4{ grid-area: four;}
+ .dis6 .img5,.dis6 .disimg5{   grid-area: five;}
+
+
+ /*juice vgod */
+
+
+
+ .dis7{
+    grid-row: 11/14;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 205px);
+    grid-template-areas: "one tow three four five"
+                          "sex saven aet nine ten"
+                          "elevn twelen therten fourten fiveten";
+                          
+    grid-gap: 10px;  
+  
+ }
+
+ .dis7 .img1,.dis7 .disimg1{grid-area: one;}
+ .dis7 .img2,.dis7 .disimg2{ grid-area: tow;}
+ .dis7 .img3,.dis7 .disimg3{ grid-area: three;}
+ .dis7 .img4,.dis7 .disimg4{   grid-area: four;}
+ .dis7 .img5,.dis7 .disimg5{ grid-area: five;}
+
+ .dis7 .img6,.dis7 .disimg6{grid-area: sex;}
+ .dis7 .img7,.dis7 .disimg7{grid-area: saven;}
+ .dis7 .img8,.dis7 .disimg8{grid-area: aet;}
+ .dis7 .img9,.dis7 .disimg9{ grid-area: nine;}
+ .dis7 .img10,.dis7 .disimg10{grid-area: ten;} 
+
+ .dis7 .img11,.dis7 .disimg11{grid-area: elevn;} 
+ .dis7 .img12,.dis7 .disimg12{grid-area: twelen;} 
+ .dis7 .img13,.dis7 .disimg13{grid-area: therten;} 
+ .dis7 .img14,.dis7 .disimg14{grid-area: fourten;} 
+ .dis7 .img15,.dis7 .disimg15{grid-area: fiveten;} 
+
+.dis7 .img6,.dis7 .img11,.dis7 .img13{margin-top: 15px;}
+
+
+ /*cghhv*/
+ .dis8 {
+  
+    display: grid;
+    grid-template-columns: repeat(5, 205px);
+    grid-template-areas: "one tow three four five";
+    grid-gap: 10px;     
+    grid-row: 14;       
+
+ }
+
+
+ .dis8 .img1,.dis8 .disimg1{grid-area: one;}
+ .dis8 .img2,.dis8 .disimg2{grid-area: tow;}
+ .dis8 .img3,.dis8 .disimg3{grid-area: three;}
+ .dis8 .img4,.dis8 .disimg4{grid-area: four;}
+ .dis8 .img5,.dis8 .disimg5{grid-area: five;}
+
+
+
+/*offer*/
+.offer{
+    display: grid;
+    grid-template-rows: 200px,200px;
+    grid-template-columns: repeat(5,200px);
+    color: rgb(7, 5, 114);
+    grid-gap: 70px 18px;
+    width: 1015px;
+    margin-top: 10px;
+}
+
+
+.offer  .newprice{font-size: 30px;}
+.offer  .oldprice{
+    text-decoration: line-through;
+    font-size: 30px;} 
+/*animation of page */
+.load{
+    background-color: white;
+    background-color: white;
+    border-radius: 50%;
+    border: 13px solid red;
+    width: 120px;
+    height: 120px;
+    margin-left: 0;
+    margin-top: -2%;
+    animation-name: ff;
+    animation-duration: 7s;
+    z-index: 1;
+    border-top-color: transparent;
+    border-left-color: green;
+    border-right-color: blue;
+    position: absolute;
+    top: 243px;
+    left: 542px;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes ff{
+    0%{transform: rotate(0turn); }
+    100%{ transform: rotate(1turn);  opacity: 0; }  
+  }
+  
+  @keyframes loaded{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+  }
+  
+  .pageload{
+  animation-name: loaded;
+  animation-duration: 6s;
+  animation-delay: 0.1s;
+  }

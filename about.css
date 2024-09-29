@@ -1,0 +1,99 @@
+
+/*about page*/
+
+/* header*/
+.page{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(10,1fr);
+    grid-template-areas: "logo logo nav nav nav nav nav nav nav nav ";
+    position: sticky;
+    top: 5px;
+    z-index: 1
+   }
+   .header{
+    grid-area:nav;
+  
+  }
+  .logo{
+  
+    grid-area:logo;
+  border-radius:2px ;
+  
+  
+  }
+   .header ul{
+    list-style: none;
+    position: absolute;
+    top: 14px;
+    right:57px;
+  
+    
+  }
+   .header ul li{
+    display: inline;
+  margin-left: 20px;
+  
+  }
+  .header ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  
+  
+
+
+
+
+
+
+
+.about{
+    width: 100%;
+    height: 100vh;
+  background-color: rgba(0, 0, 0, 0.651);
+
+}
+.about img{
+    position:relative;
+width: auto;
+height: auto;
+left: 35%;
+top: 40px;
+}
+.about p{
+    position: relative;
+    font-size: 50px;
+    left: 40%;
+    top: 150px;
+    color: rgb(194, 105, 4);
+    font-weight: bold;
+}
+
+.about .span1{
+    position: relative;
+    left: 30%;
+    top: 190px;
+    font-size: 27px;
+    color: white;
+    letter-spacing: 4px;
+    line-height: 39px;
+    word-spacing:10px;
+}
+
+
+.about .soical_icon{
+    position: relative;
+    height: 321px;
+    width: 396px;
+   
+    left: calc((100% - 200px) / 2);
+    bottom: -243px;
+}
+.about .soical_icon a i{
+    font-size: 2em;
+    margin-left: 20px;
+}
+  
